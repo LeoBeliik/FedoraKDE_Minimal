@@ -7,7 +7,7 @@ if ! [ $(id -u) = 0 ]; then
 fi
 
 # Make backup of the dnf configs
-cp /etc/dnf/dnf.conf.bak
+cp /etc/dnf/dnf.conf /etc/dnf/dnf.conf.bak
 
 # Add custom configs to dnf.conf
 echo '# Custom dnf configs' >> /etc/dnf/dnf.conf
