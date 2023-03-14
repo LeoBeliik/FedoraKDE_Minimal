@@ -42,6 +42,8 @@ systemctl enable sddm
 systemctl set-default graphical.target
 
 # Clean unused packages
+dnf remove plasma-welcome*
+dnf remove qt-qdbusviewer*
 dnf autoremove -y
 
 # Done
